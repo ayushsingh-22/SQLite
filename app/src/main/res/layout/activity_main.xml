@@ -1,0 +1,109 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Browser Tabs -->
+    <LinearLayout
+        android:id="@+id/browser_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Tab 1 -->
+        <TextView
+            android:id="@+id/tab_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Google - YouTube" />
+
+        <!-- Tab 2 -->
+        <TextView
+            android:id="@+id/tab_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chat Bots: A Conversational AI..." />
+
+        <!-- Add more tabs as needed -->
+
+    </LinearLayout>
+
+    <!-- Page Content -->
+    <LinearLayout
+        android:id="@+id/page_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Sidebar Menu -->
+        <LinearLayout
+            android:id="@+id/sidebar_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Menu Items -->
+            <TextView
+                android:id="@+id/menu_item_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+
+            <TextView
+                android:id="@+id/menu_item_channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your channel" />
+
+            <!-- Add more menu items as needed -->
+
+        </LinearLayout>
+
+        <!-- Main Content Area -->
+        <FrameLayout
+            android:id="@+id/main_content_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <!-- Content goes here -->
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- Top Right Corner -->
+    <LinearLayout
+        android:id="@+id/top_right_corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search" />
+
+        <!-- Notifications Icon -->
+        <ImageView
+            android:id="@+id/notifications_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background" />
+
+        <!-- User Profile Icon -->
+        <ImageView
+            android:id="@+id/user_profile_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground" />
+
+    </LinearLayout>
+
+</LinearLayout>
